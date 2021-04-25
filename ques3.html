@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Question 3</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">STC TASK IV</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="ques1.html">Question 1</a></li>
+                <li><a href="ques2.html">Question 2</a></li>
+                <li><a href="ques3.html">Question 3</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <h1 style="margin: 1%;">Movie Details! </h1>
+
+    <div class="form">
+        <form>
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter Name">
+            </div>
+            <div class="form-group">
+                <label>Mobile Number</label>
+                <input type="text" class="form-control" id="number" placeholder="Enter Phone Number">
+            </div>
+            <div class="form-group">
+                <label>Pick a movie</label>
+                <select class="form-control" id="movie">
+          <option>Select</option>
+          <option>Chota Bheem</option>
+          <option>Pokemon Detective Pikachu</option>
+          <option>Ben 10</option>
+          <option>Angry Birds</option>
+          <option>Mr Bean</option>
+        </select>
+            </div>
+            <div class="form-group">
+                <label>Choose the ticket type</label>
+                <select class="form-control" id="type">
+          <option>Select</option>
+          <option>Platinum</option>
+          <option>Gold</option>
+          <option>Silver</option>
+          <option>Bronze</option>
+        </select>
+            </div>
+            <button style="margin-left: 1%;" type="button" onclick="mov()" class="btn btn-primary">Submit</button>
+        </form>
+        <br>
+
+        <table id="myTable">
+
+        </table>
+        <br>
+        <table class="table" id="display">
+
+            <tr>
+                <th>Name</th>
+                <th>Mobile Number</th>
+                <th>Movie Name</th>
+                <th>Ticket Type</th>
+                <th>Price</th>
+            </tr>
+
+
+        </table>
+    </div>
+    <script src="ques3.js"></script>
+
+</body>
+
+</html>

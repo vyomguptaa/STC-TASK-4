@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Question 2</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">STC TASK IV</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="ques1.html">Question 1</a></li>
+                <li><a href="ques2.html">Question 2</a></li>
+                <li><a href="ques3.html">Question 3</a></li>
+            </ul>
+        </div>
+    </nav>
+    <h1 style="margin: 1%;">Registration Form!</h1>
+    <div class="form">
+        <form>
+            <div class="form-group">
+                <label style="margin-left: 1%;">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter Name">
+                <label id="name_lab" style="color: red; visibility: hidden">Invalid</label>
+
+            </div>
+            <div class="form-group">
+                <label style="margin-left: 1%;">Register Number</label>
+                <input type="text" class="form-control" id="register" placeholder="Enter Register Number">
+                <label id="reg_lab" style="color: red; visibility: hidden">Invalid</label>
+            </div>
+            <div class="form-group">
+                <label style="margin-left: 1%;">DOB</label><br>
+                <label style="margin-left: 1%;">(DD/MM/YYYY) or (DD-MM-YYYY)</label>
+                <input type="text" class="form-control" id="dob" placeholder="Enter Date of Birth">
+                <label id="db" style="color: red; visibility: hidden">Invalid</label>
+            </div>
+            <div class="form-group">
+                <label style="margin-left: 1%;">Program</label>
+                <input type="text" class="form-control" id="prog" placeholder="Enter Program Name">
+
+            </div>
+            <div class="form-group">
+                <label style="margin-left: 1%;">Email id</label>
+                <input type="text" class="form-control" id="email" placeholder="Enter Email id">
+                <label id="email_lab" style="color: red; visibility: hidden">Invalid</label>
+            </div>
+            <div class="form-group">
+                <label style="margin-left: 1%;">Phone number</label>
+                <input type="text" class="form-control" id="phone" placeholder="Enter Phone Number">
+                <label id="phone_lab" style="color: red; visibility: hidden">Invalid</label>
+            </div>
+
+
+
+            <button style="margin: 1%;" type="button" onclick="reg(frm)" class="btn btn-primary valid">Submit</button>
+            <div id="success" style="color: green; visibility: hidden">Submitted succesfully!</div>
+
+        </form>
+    </div>
+    <script src="ques2.js"></script>
+
+</body>
+
+</html>
